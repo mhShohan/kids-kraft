@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark: #060b08;
+    --light: #4FBDBA;
+    --color2: #132720;
+    --color3: #1a3328;
+    --color4: #507063;
+}
+
+* {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Glory', sans-serif;
+}
+
+.container {
+    @apply max-w-6xl mx-auto
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.glory {
+    font-family: 'Glory', sans-serif;
+}
+
+.center {
+    @apply flex justify-center items-center
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* gap: 4px; */
+    height: 60px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background: var(--dark);
+    padding: 0 .4rem;
+    height: 80px;
+    border-bottom: 2px solid var(--color4);
+    @apply flex justify-center items-center
+}
+
+.logo h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.active {
+    font-weight: 900;
+    @apply text-cyan-400
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #132720;
+}
+
+.divider-text {
+    padding: 0 1rem;
+    color: #132720;
+    font-weight: bold;
+}
